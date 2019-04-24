@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+  font-family: monospace;
+  background-color: #000000;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+header p {
+  font-size: 25px;
+}
+
+.pads {
+  width: 100%;
+  display: flex;
+  background: lightblue;
+  box-shadow: 0px -20px 100px 10px rgba(255, 255, 255, 0.75);
+  
+}
+
+.pads > div {
+  flex: 1;
+  width: 100px;
+  height: 200px;
+}
+
+.pad1 {
+  background: #F44336;
+}
+.pad1:hover{
+  background: #B71C1C;
+  box-shadow: 0px -120px 50px -19px rgba(255, 255, 255, 0.75);
+}
+
+.pad2 {
+  background: #E91E63;
+}
+.pad2:hover{
+  background: #880E4F;
+  box-shadow: 0px -120px 50px -19px rgba(255, 255, 255, 0.75);
+}
+
+.pad3 {
+  background: #9C27B0;
+}
+.pad3:hover{
+  background: #7B1FA2;
+  box-shadow: 0px -120px 50px -19px rgba(255, 255, 255, 0.75);
+}
+
+.pad4 {
+  background: #673AB7;
+}
+.pad4:hover{
+  background: #4527A0;
+  box-shadow: 0px -120px 50px -19px rgba(255, 255, 255, 0.75);
+}
+
+.pad5 {
+  background: #3F51B5;
+}
+.pad5:hover{
+  background: #1A237E;
+  box-shadow: 0px -120px 50px -19px rgba(255, 255, 255, 0.75);
+}
+
+.pad6 {
+  background: #00BCD4;
+}
+.pad6:hover{
+  background: #00838F;
+  box-shadow: 0px -120px 50px -19px rgba(255, 255, 255, 0.75);
+}
+
+.visual > div {
+  bottom: 0%;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(1);
+}
+
+@keyframes jumps1{
+  0% {
+    left: 10%;
+    bottom: 0%;
+  }
+
+  50% {
+    left: 25%;
+    bottom: 70%;
+  }
+
+  100% {
+    left: 50%;
+    bottom: 0%;
+  }
+}
+
+
+@keyframes jumps2{
+  0% {
+    left: 20%;
+    bottom: 0%;
+  }
+
+  50% {
+    left: 50%;
+    bottom: 50%;
+  }
+
+  100% {
+    left: 80%;
+    bottom: 0%;
+  }
+}
+
+@keyframes jumps3{
+  0% {
+    right: 10%;
+    bottom: 0%;
+  }
+
+  50% {
+    right: 25%;
+    bottom: 70%;
+  }
+
+  100% {
+    right: 50%;
+    bottom: 0%;
+  }
+}
+
+@keyframes jumps4{
+  0% {
+    right: 20%;
+    bottom: 0%;
+  }
+
+  50% {
+    right: 50%;
+    bottom: 50%;
+  }
+
+  100% {
+    right: 80%;
+    bottom: 0%;
+  }
+}
